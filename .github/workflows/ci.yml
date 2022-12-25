@@ -5,8 +5,8 @@ name: CI
   push:
     branches:
       - master
-  schedule:
-    - cron: "0 5 * * 4"
+  # schedule:
+    # - cron: "0 5 * * 4"
 
 jobs:
 
@@ -37,7 +37,7 @@ jobs:
       matrix:
         os:
           - macos-12
-          - macos-11
+          # - macos-11
 
     steps:
       - name: Check out the codebase.
